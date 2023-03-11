@@ -12,8 +12,6 @@ I have a strong passion for programming and technology, particularly in the back
 
 In my previous roles, I have gained experience in developing scalable and efficient backend systems, building RESTful APIs, and implementing database architectures. I have also worked on projects that involved cloud computing, data analysis, and machine learning.
 
-When I'm not coding, I enjoy reading books and articles related to technology, playing video games, and exploring new places.
-
 If you have any questions or would like to discuss a potential project, feel free to contact me through eddiebrock2001@gmail.com!
 
 
