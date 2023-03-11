@@ -1,4 +1,5 @@
 baseURL = 'https://tcmits.github.io/'
+publishDir = "docs"
 languageCode = 'en-us'
 title = 'TcMits'
 
