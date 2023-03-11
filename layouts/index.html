@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+{{ partial "header.html" . }}
+
+<script src="{{ .Site.BaseURL }}js/print.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ .Site.BaseURL }}css/print.min.css">
+
+<body>
+  <div class="content">
+    {{ partial "head.html" . }}
+
+    <main class="list">
+      <div class="site-description">
+        {{- if isset .Site.Params "subtitle" -}}
+        <p>{{ .Site.Params.Subtitle | markdownify }}</p>
+        {{- end -}}
+      </div>
+
+      <section class="body" id="content">
+        {{ .Content }}
+      </section>
+
+      <h1><a id="print-content">Download</a></h1>
+    </main>
+
+    {{ partial "footer.html" . }}
+  </div>
+
+  <script>
+    document.getElementById("print-content").addEventListener("click", function(event) {
+      printJS({
+        printable: 'content',
+        type: 'html',
+        targetStyles: ['*'],
+      })
+    });
+  </script>
+
+</body>
+
+</html>

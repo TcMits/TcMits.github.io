@@ -1,3 +1,48 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://TcMits.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'TcMits'
+
+theme="archie"
+copyright = "© eddiebrock2001@gmail.com"
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+paginate=3 # articles per page
+
+[params]
+	mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "Server-Side Programmer and Scalability Enthusiast"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/TcMits"
+
+[[params.social]]
+name = "Instagram"
+icon = "instagram"
+url = "https://www.instagram.com/t.c.mits/"
+
+[[params.social]]
+name = "Facebook"
+icon = "facebook"
+url = "https://www.facebook.com/phuc.lam.3701/"
+
+# Main menu Items
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 1
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 3
