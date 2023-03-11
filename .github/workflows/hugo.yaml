@@ -59,10 +59,11 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+      - name: Commit build
+        uses: stefanzweifel/git-auto-commit-action@v4 
         with:
-          path: ./docs
+          commit_message: "build: automated build"
+          branch: main
 
   # Deployment job
   deploy:
