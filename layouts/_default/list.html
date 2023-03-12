@@ -1,0 +1,23 @@
+{{ define "main" }}
+{{ if isset .Data "Term" }}
+<h1>Entries tagged - "{{ .Data.Term }}"</h1>
+{{ else }}
+<h1 class="page-title">All articles</h1>
+{{ end }}
+
+<main class="list">
+  {{ $pages := .Data.Pages }}
+  {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+  {{ range $paginator.Pages }}
+		{{- if (not (in (.Site.Params.excludedTypes | default (slice "page")) .Type)) -}}
+    <section class="list-item">
+      <h2 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h2>
+      <time>{{ dateFormat "Jan 2, 2006" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+      <br>{{ template "partials/pagedescription.html" . }}
+      <a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
+    </section>
+		{{- end -}}
+  {{ end }}
+  {{ template "partials/paginator.html" . }}
+</main>
+{{ end }}

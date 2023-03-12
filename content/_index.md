@@ -72,4 +72,4 @@ Overall, my education has provided me with the knowledge and skills necessary to
 # Portfolio
 ---
 
-Feel free to check out my [posts]({{< ref "posts/" >}}). I hope you find them informative and insightful, and I welcome any feedback or suggestions you may have.
+Feel free to check out my [posts]({{< ref "tags/portfolio/" >}}). I hope you find them informative and insightful, and I welcome any feedback or suggestions you may have.
