@@ -3,7 +3,7 @@ title: "ERP"
 date: 2023-03-12T15:58:24+07:00
 draft: false
 tags: ["portfolio", "work"]
-description: "This post is a part of my portfolio, where I showcase my skills and experience as a backend developer. In this post, I will be discussing my contributions to an ERP system project, including the development of customer, partner, order, and stock modules. Thank you for taking the time to visit my portfolio and review my work."
+description: "This post is a part of my portfolio, where I showcase my skills and experience as a backend developer. In this post, I will be discussing my contributions to an ERP system project."
 ---
 
 # ERP
