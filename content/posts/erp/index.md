@@ -29,3 +29,9 @@ I developed the ERP system using Django and Django Rest Framework. The system wa
 The customer management module was designed to allow the company to keep track of customer information, such as contact details, order history, and purchase patterns. The partner management module allowed the company to manage and track its partners, including suppliers and vendors. The order management module was used to manage orders, including order placement, fulfillment, and tracking. The stock management module helped the company keep track of inventory levels and automatically reorder products when necessary.
 
 Overall, the ERP system I created for ABC Company has streamlined its business operations and helped the company achieve better efficiency and productivity. The system has provided real-time data and analytics, allowing the company to make better-informed decisions and stay competitive in its industry.
+
+{{< figure src="erp_product.png" title="ERP system's listing products page" alt="ERP system's listing products page" >}}
+
+{{< figure src="erp_product.png" title="ERP system's listing orders page" alt="ERP system's listing orders page" >}}
+
+{{< figure src="erp_product.png" title="ERP system's listing transactions page" alt="ERP system's listing transactions page" >}}
